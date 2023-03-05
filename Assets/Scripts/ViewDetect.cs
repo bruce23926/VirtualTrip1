@@ -22,7 +22,7 @@ public class ViewDetect : MonoBehaviour
         var bounds = collider.bounds;
         CameraFrustum = GeometryUtility.CalculateFrustumPlanes(camera);
         if (GeometryUtility.TestPlanesAABB(CameraFrustum, bounds)) {
-            renderer.sharedMaterial.color = new Color(255, 255, 0, 1);
+            renderer.material.color = new Color(255, 255, 0, 1);
         } else {
             renderer.sharedMaterial.color = new Color(0, 0, 0, 0);
         }
