@@ -8,7 +8,7 @@ public class PPT : MonoBehaviour
     // Start is called before the first frame update
     int page = 1;
     RawImage img;
-    public Texture t1, t2, t3, t4, t5, t6, t7;
+    public Texture t1, t2, t3, t4, t5, t6, t7, t8, t9;
     float timer = 0;
     void Start()
     {
@@ -47,6 +47,14 @@ public class PPT : MonoBehaviour
                         break;
                     case 6:
                         img.texture = t7;
+                        page += 1;
+                        break;
+                    case 7:
+                        img.texture = t8;
+                        page += 1;
+                        break;
+                    case 8:
+                        img.texture = t9;
                         page += 1;
                         break;
                     default:
